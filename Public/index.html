@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Consulta CURP</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>Generador CURP</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <h1>Consulta y Generación de CURP</h1>
 
 <form id="curpForm">
-    <label>Nombre Completo:</label>
-    <input type="text" id="nombre" placeholder="Nombre(s)" required>
-    <input type="text" id="paterno" placeholder="Apellido Paterno" required>
-    <input type="text" id="materno" placeholder="Apellido Materno" required>
 
-    <label>Fecha de Nacimiento:</label>
-    <input type="date" id="fecha" required>
+<label>Nombre(s)</label>
+<input type="text" id="nombre" required>
 
-    <label>Sexo:</label>
-    <select id="sexo" required>
-     <option value="">Seleccione</option>
-     <option value="H">Hombre</option>
-     <option value="M">Mujer</option>
-    </select>
+<label>Apellido Paterno</label>
+<input type="text" id="paterno" required>
 
-    <label>Entidad:</label>
-    <select id="estado" required>
-     <option value="">Seleccione</option>
-     <option value="SP">San Luis Potosí</option>
-     <option value="CC">Campeche</option>
-    </select>
+<label>Apellido Materno</label>
+<input type="text" id="materno" required>
 
-  <button type="submit">Generar CURP</button>
+<label>Fecha de nacimiento</label>
+<input type="date" id="fecha" required>
+
+<label>Sexo</label>
+<select id="sexo" required>
+  <option value="">Seleccione</option>
+  <option value="H">Hombre</option>
+  <option value="M">Mujer</option>
+</select>
+
+<label>Entidad</label>
+<select id="estado" required>
+  <option value="">Seleccione</option>
+  <option value="SLP">San Luis Potosí</option>
+  <option value="CAM">Campeche</option>
+</select>
+
+<button type="submit">Generar CURP</button>
 </form>
 
-<div id="resultado"></div>
+<h2 id="resultado"></h2>
 
 <script src="script.js"></script>
+
 </body>
 </html>
